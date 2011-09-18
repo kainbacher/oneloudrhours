@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+    <head>
+        <title>Captain Energy</title>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="description" content="Captian Energy"/>
+        <meta name="keywords" content="Wien Energie, Captain, Energy"/>        
+        
+        <meta name="author" content="Roland Kainbacher" />
+        <meta name="revisit-after" content="10 days" />
+        <meta name="robots" content="index, follow" />
+        <meta name="copyright" content="Roland Kainbacher MA. Beauty Parlour" />
+
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/styles.css">
+        <link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/skin.css">
+        
+        <script type="text/javascript" src="{{ MEDIA_URL }}scripts/jquery-1.5.min.js"></script>
+        <script type="text/javascript" src="{{ MEDIA_URL }}scripts/jquery.jcarousel.min.js"></script>
+        <!-- <script type="text/javascript" src="{{ MEDIA_URL }}scripts/rk.validate.js"></script> -->
+        <script type="text/javascript" src="{{ MEDIA_URL }}scripts/jquery.main.js"></script>
+
+        <script src="http://connect.facebook.net/de_DE/all.js"></script>
+
+    </head>
+
+    <body>
+
+        <div id="fb-root">
+            {% block content %}
+            {% endblock %}
+        </div>
+
+        <script>
+            FB.Canvas.setSize({ width: 520, height: 1500 });
+        </script>
+        
+    </body>
+
+</html>

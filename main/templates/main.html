@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div id="mainWrapper">
+    <div id="headerWrapper"  class="headerItem">
+
+        <ul id="mycarousel" class="jcarousel-skin-tango">
+
+            <li>
+                <a href="0">
+                    <img src="{{ MEDIA_URL }}uploads/SB_Navi_1.png" width="165" height="140" />
+                </a>
+            </li>
+
+            <li>
+                <a href="1">
+                    <img src="{{ MEDIA_URL }}uploads/SB_Navi_2.png" width="165" height="140" />
+                </a>
+            </li>
+
+             <li>
+                <a href="2">
+                    <img src="{{ MEDIA_URL }}uploads/Main_Navi_4.png" width="165" height="140" />
+                </a>
+            </li>
+
+        </ul>
+
+    </div><!-- headerWrapper -->
+    
+    <div id="contentWrapper">
+        <div id="contentSlider" style="left:{{ slider_pos }}">
+
+    
+            <div class="contentItem">
+            
+                <div id="schoolboxTop">
+                    <img src="{{ MEDIA_URL }}images/schoolbox_top_bg.png" alt="arrow_right" width="520" height="353" />
+                    <div class="schoolboxTopLink">
+                        <a href="/"></a>
+                    </div>
+                </div>
+                
+                <div id="schoolboxBottom">
+                    <div id="schoolboxBottomText">
+                        <p>Die Lernunterlagen der Schulbox sind abwechslungsreich und altersgemäß aufbereitet. Aus den ingesamt 11 Kapiteln haben wir Ihnen eine kleine Auswahl zusammengestellt. Das jeweilige PDF zu den einzelnen Kapiteln beinhaltet die Unterlagen in Farbe und Schwarz-weiß. Somit können Sie die Unterlagen schon mal in Ihrer Klasse ausprobieren.</p>
+                    </div>
+                    <div id="schoolboxBottomDownloads">
+                        <ul>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_1.pdf" target="_top" >KAPITEL 1 - "Komm mit ins Land der Energie"</a></li>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_2.pdf" target="_top" >KAPITEL 2 - "Energie früher und heute"</a></li>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_3.pdf" target="_top" >KAPITEL 3 - "Energieträger"</a></li>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_4.pdf" target="_top" >KAPITEL 4 - "Lebensenergie"</a></li>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_5.pdf" target="_top" >KAPITEL 5 - "Spannende Energieexperimente"</a></li>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_6.pdf" target="_top" >KAPITEL 6 - "Wir untersuchen unser Zuhause"</a></li>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_7.pdf" target="_top" >KAPITEL 7 - "Energiesparen ist Umweltschutz"</a></li>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_8.pdf" target="_top" >KAPITEL 8 - "Wege der Energie"</a></li>
+                            <li><a href="{{ MEDIA_URL }}uploads/kapitel/kapitel_9.pdf" target="_top" >KAPITEL 9 - "Energieschlaumeier"</a></li>
+                        </ul>
+                    
+                    </div>
+                </div>
+
+                <div class="schoolboxShareLink" onclick="compShare('Schulbox', 'Lehrmaterial, Spiele und Experimente: Mit der Wien Energie Schulbox können Sie Ihren SchülerInnen das Thema Energie spielend näher bringen.', 'http://www.facebook.com/pages/Captain-Energy/140202702711313?sk=app_170515489663198')">
+                    &nbsp;
+                </div> 
+
+            </div> <!-- contentItem -->
+
+
+            <div class="contentItem">
+                <img src="{{ MEDIA_URL }}images/schoolbox_schulservice.png" width="520" height="355" />
+
+                <div class="schoolboxShareLink" onclick="compShare('Schulbox', 'Wir liefern auch Wissen.', 'http://www.facebook.com/pages/Captain-Energy/140202702711313?sk=app_170515489663198')">
+                    &nbsp;
+                </div> 
+            </div> <!-- contentItem -->
+  
+            <div class="contentItem">
+                
+                <img src="{{ MEDIA_URL }}images/fan_guided_tours.png" width="520" height="369" />
+                
+                <div class="schoolboxGuidedToursLink1">
+                    <a href="http://www.wienenergie.at/we/ep/channelView.do/channelId/-22263/pageTypeId/11892" target="_top">
+                    &nbsp;
+                    </a>
+                </div>
+                
+                <div class="schoolboxGuidedToursLink2">
+                    <a href="http://www.wienenergie.at/we/ep/channelView.do/channelId/-22265/pageTypeId/11892" target="_top">
+                    &nbsp;
+                    </a>
+                </div>
+                
+                <div class="schoolboxGuidedToursLink3">
+                    <a href="http://www.wienenergie.at/we/ep/channelView.do/channelId/-22267/pageTypeId/11892" target="_top">
+                    &nbsp;
+                    </a>
+                </div>
+
+                <div class="schoolboxShareLink" onclick="compShare('Schulbox', 'Nichts geht über praktische Erfahrungen. Deshalb bietet die Wien Energie ein umfangreiches Angebot an kostenlosen Führungen und Vorträgen für alle Schulstufen.', 'http://www.facebook.com/pages/Captain-Energy/140202702711313?sk=app_170515489663198')">
+                    &nbsp;
+                </div> 
+            
+            </div> <!-- contentItem -->
+  
+    
+        </div> <!-- contentSlider -->
+    </div> <!-- contentWrapper -->
+
+
+</div>
+
+<script>
+    FB.init({
+        appId  : '170515489663198',
+        status : true, // check login status
+        cookie : true, // enable cookies to allow the server to access the session
+        xfbml  : true  // parse XFBML
+    });
+</script>
+
+{% endblock %}
+

@@ -1,0 +1,26 @@
+
+#header {
+    background-color: #26180E;
+}
+
+#logo {
+    float: left;
+    margin-left: 20px;
+}
+
+#site-title {
+    float: left;
+}
+
+#topMenu {
+}
+
+#topMenu ul {
+    list-style: none;
+    padding: 0px;
+}
+
+#topMenu li {
+    float: left;
+    margin-right: 10px;
+}

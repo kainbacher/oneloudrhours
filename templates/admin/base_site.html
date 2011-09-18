@@ -1,0 +1,30 @@
+{% extends "admin/base.html" %}
+{% load i18n %}
+
+{% block title %}{{ title }} | {% trans 'ONELOUDR TIMEKEEPING' %}{% endblock %}
+
+
+{% block branding %}
+<link rel="stylesheet" type="text/css" href="{{ MEDIA_URL }}css/admin.css" />
+
+<div id="logo">
+    <a href="/admin/">
+        <img src="{{ MEDIA_URL }}images/logo-backend.jpg" alt="logo" width="60" />
+    </a>
+</div>
+<div id="site-title">
+    <h1>ONELOUDR TIMEKEEPING</h1>
+</div>
+{% endblock %}
+
+
+
+{% block pretitle %}
+{% endblock %}
+
+
+{% block nav-global %}
+{% endblock %}
+
+
+
