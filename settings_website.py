@@ -27,12 +27,28 @@ MANAGERS = ADMINS
 
 
 
-DATABASE_ENGINE = 'postgresql_psycopg2'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3'or 
-DATABASE_NAME = 'beautyparlour_oneloudrhours'           # Or path to database file if using sqlite3.
-DATABASE_USER = 'beautyparlour'             # Not used with sqlite3.
-DATABASE_PASSWORD = 'ZfSpHvYz'         # Not used with sqlite3.
-DATABASE_HOST = 'external-db.s1797.gridserver.com'             # Set to empty string for localhost. Not used with 
-DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
+#DATABASE_ENGINE = 'postgresql_psycopg2'           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3'or 
+#DATABASE_NAME = 'beautyparlour_oneloudrhours'           # Or path to database file if using sqlite3.
+#DATABASE_USER = 'beautyparlour'             # Not used with sqlite3.
+#DATABASE_PASSWORD = 'ZfSpHvYz'         # Not used with sqlite3.
+#DATABASE_HOST = 'external-db.s1797.gridserver.com'             # Set to empty string for localhost. Not used with 
+#DATABASE_PORT = ''             # Set to empty string for default. Not used with sqlite3.
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'beautyparlour_oneloudrhours',
+        'USER': 'beautyparlour',
+        'PASSWORD': 'BedGmd8c',
+        'HOST': '',
+        'PORT': '',
+    }
+}
+
+
+
+
 URL = 'http://oneloudrhours.beautyparlour.at/'
 
 
